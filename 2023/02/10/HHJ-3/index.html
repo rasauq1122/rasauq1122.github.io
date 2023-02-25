@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang=ko>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="들어가며안녕하세요. rasauq1122입니다.최근 포스팅이 4일 전이네요. 매일매일 포스팅을 쓰겠다는 의지는 무너져 내리고 말았지만… 제가 그동안 놀기만 했던 건 아닙니다! 그동안 홍합찜 프로젝트을 진행하면서 많은 변경사항이 있었습니다. 오늘은 제가 지금까지의 프로젝트 진행내역에 대해 간단히 포스팅을 작성해볼 생각입니다. 지금까지는…1. Express.js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="프로젝트 &#39;홍합찜&#39; - 3">
+<meta property="og:url" content="http://rasauq1122.github.io/2023/02/10/HHJ-3/index.html">
+<meta property="og:site_name" content="rasauq1122&#39;s Archive">
+<meta property="og:description" content="들어가며안녕하세요. rasauq1122입니다.최근 포스팅이 4일 전이네요. 매일매일 포스팅을 쓰겠다는 의지는 무너져 내리고 말았지만… 제가 그동안 놀기만 했던 건 아닙니다! 그동안 홍합찜 프로젝트을 진행하면서 많은 변경사항이 있었습니다. 오늘은 제가 지금까지의 프로젝트 진행내역에 대해 간단히 포스팅을 작성해볼 생각입니다. 지금까지는…1. Express.js">
+<meta property="og:locale" content="ko_KR">
+<meta property="article:published_time" content="2023-02-10T05:31:20.000Z">
+<meta property="article:modified_time" content="2023-02-25T01:50:29.168Z">
+<meta property="article:author" content="Junseong Park">
+<meta property="article:tag" content="project">
+<meta property="article:tag" content="development">
+<meta property="article:tag" content="hhj">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>프로젝트 &#39;홍합찜&#39; - 3</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom.xml" title="rasauq1122&#39;s Archive" type="application/atom+xml" />
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/rasauq1122">Projects</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2023/02/22/small-talk-230222/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2023/02/06/HHJ-2/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://rasauq1122.github.io/2023/02/10/HHJ-3/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&text=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&title=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&is_video=false&description=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=프로젝트 &#39;홍합찜&#39; - 3&body=Check out this article: http://rasauq1122.github.io/2023/02/10/HHJ-3/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&title=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&title=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&title=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&title=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&name=프로젝트 &#39;홍합찜&#39; - 3&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://rasauq1122.github.io/2023/02/10/HHJ-3/&t=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B0"><span class="toc-number">1.</span> <span class="toc-text">들어가며</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%A7%80%EA%B8%88%EA%B9%8C%EC%A7%80%EB%8A%94%E2%80%A6"><span class="toc-number">2.</span> <span class="toc-text">지금까지는…</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Express-js-%EB%8F%84%EC%9E%85"><span class="toc-number">2.1.</span> <span class="toc-text">1. Express.js 도입</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-VoiceStateUpdate-%EC%9D%B4%EB%B2%A4%ED%8A%B8"><span class="toc-number">2.2.</span> <span class="toc-text">2. VoiceStateUpdate 이벤트</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-subscriber-%ED%85%8C%EC%9D%B4%EB%B8%94"><span class="toc-number">2.3.</span> <span class="toc-text">3. subscriber 테이블</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%EA%B7%B8-%EC%99%B8"><span class="toc-number">2.4.</span> <span class="toc-text">4. 그 외</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%8B%A4%EC%9D%8C%EC%9D%80%E2%80%A6"><span class="toc-number">3.</span> <span class="toc-text">다음은…</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        프로젝트 &#39;홍합찜&#39; - 3
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Junseong Park</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-02-10T05:31:20.000Z" itemprop="datePublished">2023-02-10</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/development/">development</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/development/" rel="tag">development</a>, <a class="tag-link-link" href="/tags/hhj/" rel="tag">hhj</a>, <a class="tag-link-link" href="/tags/project/" rel="tag">project</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="들어가며"><a href="#들어가며" class="headerlink" title="들어가며"></a>들어가며</h2><p>안녕하세요. rasauq1122입니다.<br>최근 포스팅이 4일 전이네요. 매일매일 포스팅을 쓰겠다는 의지는 무너져 내리고 말았지만… 제가 그동안 놀기만 했던 건 아닙니다! 그동안 홍합찜 프로젝트을 진행하면서 많은 변경사항이 있었습니다. 오늘은 제가 지금까지의 프로젝트 진행내역에 대해 간단히 포스팅을 작성해볼 생각입니다.</p>
+<h2 id="지금까지는…"><a href="#지금까지는…" class="headerlink" title="지금까지는…"></a>지금까지는…</h2><h3 id="1-Express-js-도입"><a href="#1-Express-js-도입" class="headerlink" title="1. Express.js 도입"></a>1. Express.js 도입</h3><p>VoiceStateUpdate 이벤트에 따른 데이터 처리를 하려고 보니까 중복되는 코드가 너무 많을 것 같다고 느꼈습니다. 그러면 따로 함수를 만들면 코드를 깔끔하게 작성할 수 있을 것이라는 생각이 들었습니다. 그때 디스코드 봇 전용 API를 만들면 아예 봇과 데이터베이스를 분리시킬 수 있다는 걸 깨달았습니다.</p>
+<p>따라서 Express.js를 도입하여 봇이 Event를 감지하면 Event로부터 봇 전용 API 서버에 요청을 보낼 때 필요한 body를 구성하여 요청을 보내는 방식으로 코드를 모두 변경하였습니다. discord bot이 직접 데이터베이스를 접근하지 않고 bot API server에서 데이터베이스를 대신 접근하는 방식인거죠. 이러한 변경이 구체적으로 어떤 장점이 있는지는 잘 모르지만(ㅎㅎ;) 일단 제가 생각하기엔 훨씬 더 깔끔하다는 느낌이 들어서 이런 식으로 변경해보았습니다.</p>
+<h3 id="2-VoiceStateUpdate-이벤트"><a href="#2-VoiceStateUpdate-이벤트" class="headerlink" title="2. VoiceStateUpdate 이벤트"></a>2. VoiceStateUpdate 이벤트</h3><p>그리고 마침내! 7일 전부터 하겠노라 예고(만)했었던 VoiceStateUpdate 이벤트에 따른 데이터 처리를 완료했습니다. 근데 초기에 제가 구상했던 것과는 다른 테이블을 사용하게 되었습니다. 테이블 구조는 다음과 같습니다.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">+-----------+-----------+------+-----+---------+-------+</span><br><span class="line">| Field     | Type      | Null | Key | Default | Extra |</span><br><span class="line">+-----------+-----------+------+-----+---------+-------+</span><br><span class="line">| guild     | bigint    | NO   |     | NULL    |       |</span><br><span class="line">| channel   | bigint    | NO   | PRI | NULL    |       |</span><br><span class="line">| user      | bigint    | NO   | PRI | NULL    |       |</span><br><span class="line">| startTime | timestamp | NO   | PRI | NULL    |       |</span><br><span class="line">| endTime   | timestamp | YES  |     | NULL    |       |</span><br><span class="line">+-----------+-----------+------+-----+---------+-------+</span><br></pre></td></tr></table></figure>
+<p>디스코드 서버 사용자가 어떤 음성 채팅방에서 통화를 진행하면, 그 통화를 시작한 시간과 끝나는 시간을 기록하도록 테이블 구조를 변경해봤습니다. 기존 방식에 비해 데이터 가공이 더 어려울 것 같다는 느낌이 들긴 하지만, 그건 미래의 제가 고생할 일이니까요 ㅎㅎ. </p>
+<p>그리고 위와 같은 테이블을 여러 개 추가로 만들었습니다. voiceState는 어떤 음성 채팅방에서 통화를 하고 있는지뿐만 아니라 사용자가 마이크가 음소거된 상태인지, 화면공유 중인지에 대한 여러 정보도 담고 있습니다. 저는 이 정보들도 나중에 가공하면 꽤나 재밌고 유의미한 결과를 보여줄 것 같아서 추가로 저장하기로 하였습니다.</p>
+<h3 id="3-subscriber-테이블"><a href="#3-subscriber-테이블" class="headerlink" title="3. subscriber 테이블"></a>3. subscriber 테이블</h3><p>처음에는 디스코드 서버 내 역할 기능을 이용하여 데이터를 추출하도록 허용한 사용자들을 구분하려 했습니다. 디스코드 서버 관리자 입장에서 생각해봐도 그 편이 더 육안으로 확인하기 쉽기도 하고, 추후 관리가 쉬울 것 같다는 생각이 들었습니다.</p>
+<p>근데 생각해보니 여러 문제가 있었습니다. 역할은 서버 관리자가 임의로 달아줄 수 있는 것이라서, 개인의 동의 없이도 역할을 강제로 할당받게 되면 봇은 그거에 대한 구분을 할 수 없으므로 데이터 추출을 진행하게 될 것이라는 거죠.</p>
+<p>물론 해결 방법은 있습니다. 디스코드 API는 역할이 변경될 때도 Event가 발생하도록 만들어져 있기 때문에, ①자신이 직접 동의한 적이 없고 ②그럼에도 불구하고 역할을 갖고 있는 사용자를 찾은 후 역할을 지워주면 됩니다. 근데 그러면 결국 어떤 사용자가 직접 동의한 적이 있다는 걸 저장해야 된다는 것이고 그러면 굳이 역할이 큰 의미가 있나 싶었습니다. 어차피 데이터베이스 내에 다 저장이 되어있는 거잖아요?</p>
+<p>그 밖에도 역할 자체를 삭제하거나, 동의한 적이 있는데 역할을 회수당한 사용자에 대한 처리도 너무 애매하고 복잡합니다. 그래서 데이터베이스에 동의한 적이 있는 사람이 다 저장되니 이것이 곧 Discord.Role의 역할을 대신할 수 있을 것이라고 생각했습니다. 그리하여 데이터 추출에 동의한 사람을 저장하는 subscriber 테이블을 만들었고, 디스코드 봇 API 서버 Router에 middleware를 적용하여 subscriber만 데이터를 추출하도록 변경하였습니다.</p>
+<h3 id="4-그-외"><a href="#4-그-외" class="headerlink" title="4. 그 외"></a>4. 그 외</h3><p>그 밖에도 &#x2F;unsubscribe 명령어 추가, 서버가 비정상 종료된 후 부팅될 때 데이터 처리, Event 처리 코드가 길어지는 걸 방지하기 위해 모듈화 등의 작업을 진행했지만, 글에서는 자세히 다루지 않고 넘어가겠습니다. 아무튼 꽤나 바쁜 하루들이었습니다….</p>
+<h2 id="다음은…"><a href="#다음은…" class="headerlink" title="다음은…"></a>다음은…</h2><p>이제 추출할 만한 데이터가 더 있는지 확인해보고 디스코드 봇에 반영한 후, 본격적으로 웹페이지를 만드는 작업을 진행하려고 합니다. 그리고 그 이전에 라즈베리파이를 하나 구매해서 서버를 실제로 돌릴 수 있도록 구성할 수 있으면 좋을 것 같네요.</p>
+<p>아마 추출할 만한 데이터는 message, emoji 외에도 memberUpdate 쪽에서 영감을 얻어볼 생각입니다. 또 Discord.js 홈페이지 들어가서 뽑아먹을 게 있는게 확인해봐야겠네요. 내일 바로 포스팅을 쓸 수 있으면 좋겠지만, 저도 코딩하는 시간이 길어지면 글 쓸 짬이 안나오네요…. 아무튼 아쉬움은 뒤로 하고 다음에 또 찾아뵙도록 하겠습니다. 좋은 하루 되세요~!</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/tags/">Tag</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="http://github.com/rasauq1122">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B0"><span class="toc-number">1.</span> <span class="toc-text">들어가며</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%A7%80%EA%B8%88%EA%B9%8C%EC%A7%80%EB%8A%94%E2%80%A6"><span class="toc-number">2.</span> <span class="toc-text">지금까지는…</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Express-js-%EB%8F%84%EC%9E%85"><span class="toc-number">2.1.</span> <span class="toc-text">1. Express.js 도입</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-VoiceStateUpdate-%EC%9D%B4%EB%B2%A4%ED%8A%B8"><span class="toc-number">2.2.</span> <span class="toc-text">2. VoiceStateUpdate 이벤트</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-subscriber-%ED%85%8C%EC%9D%B4%EB%B8%94"><span class="toc-number">2.3.</span> <span class="toc-text">3. subscriber 테이블</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%EA%B7%B8-%EC%99%B8"><span class="toc-number">2.4.</span> <span class="toc-text">4. 그 외</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%8B%A4%EC%9D%8C%EC%9D%80%E2%80%A6"><span class="toc-number">3.</span> <span class="toc-text">다음은…</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://rasauq1122.github.io/2023/02/10/HHJ-3/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&text=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&title=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&is_video=false&description=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=프로젝트 &#39;홍합찜&#39; - 3&body=Check out this article: http://rasauq1122.github.io/2023/02/10/HHJ-3/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&title=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&title=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&title=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&title=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://rasauq1122.github.io/2023/02/10/HHJ-3/&name=프로젝트 &#39;홍합찜&#39; - 3&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://rasauq1122.github.io/2023/02/10/HHJ-3/&t=프로젝트 &#39;홍합찜&#39; - 3"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2022-2023
+    Junseong Park
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/rasauq1122">Projects</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">
+
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-81S0RLP4P2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-81S0RLP4P2');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>

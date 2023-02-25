@@ -1,0 +1,14 @@
+User-agent: *
+
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
+Disallow: /lib/
+
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Allow: /about/
+
+Sitemap: https://rasauq1122.github.io/sitemap.xml

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang=ko>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="시작하며안녕하세요. rasauq1122입니다.2022년 12월 22일, 한양대 ERICA캠퍼스 알고리즘 학회 ‘영과일’ 내부대회 및 경인지역 6개대학 연합 프로그래밍 경시대회 shake! 선발전 Zero One Algorithm Contest 2022(이하 ZOAC 5)가 개최되었습니다.   출제는 저, 민경 누나, 준호와 효석이로 총 4명이 참가하였으며,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ZOAC 2022 후기 1">
+<meta property="og:url" content="http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/index.html">
+<meta property="og:site_name" content="rasauq1122&#39;s Archive">
+<meta property="og:description" content="시작하며안녕하세요. rasauq1122입니다.2022년 12월 22일, 한양대 ERICA캠퍼스 알고리즘 학회 ‘영과일’ 내부대회 및 경인지역 6개대학 연합 프로그래밍 경시대회 shake! 선발전 Zero One Algorithm Contest 2022(이하 ZOAC 5)가 개최되었습니다.   출제는 저, 민경 누나, 준호와 효석이로 총 4명이 참가하였으며,">
+<meta property="og:locale" content="ko_KR">
+<meta property="article:published_time" content="2022-12-26T01:52:46.000Z">
+<meta property="article:modified_time" content="2023-02-25T01:50:29.168Z">
+<meta property="article:author" content="Junseong Park">
+<meta property="article:tag" content="ZOAC">
+<meta property="article:tag" content="ZOAC 2022">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>ZOAC 2022 후기 1</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom.xml" title="rasauq1122&#39;s Archive" type="application/atom+xml" />
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/rasauq1122">Projects</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2022/12/27/ZOAC-2022-%ED%9B%84%EA%B8%B0-2/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2022/12/26/%EC%8B%A0%EC%9E%A5%EA%B0%9C%EC%97%85/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&text=ZOAC 2022 후기 1"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&title=ZOAC 2022 후기 1"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&is_video=false&description=ZOAC 2022 후기 1"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=ZOAC 2022 후기 1&body=Check out this article: http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&title=ZOAC 2022 후기 1"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&title=ZOAC 2022 후기 1"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&title=ZOAC 2022 후기 1"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&title=ZOAC 2022 후기 1"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&name=ZOAC 2022 후기 1&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&t=ZOAC 2022 후기 1"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0"><span class="toc-number">1.</span> <span class="toc-text">시작하며</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#A-ZOAC-5"><span class="toc-number">2.</span> <span class="toc-text">A. ZOAC 5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#B-%EC%A0%84%ED%88%AC%EC%9D%98-%EC%8B%A0"><span class="toc-number">3.</span> <span class="toc-text">B. 전투의 신</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C-%ED%99%A9%EA%B8%88-%EC%B9%B5%ED%85%8C%EC%9D%BC"><span class="toc-number">4.</span> <span class="toc-text">C. 황금 칵테일</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#D-%EC%9D%B4-%EC%82%AC%EB%9E%8C-%EC%99%9C-%EC%9D%B4%EB%A0%87%EA%B2%8C-1122%EB%A5%BC-%EC%A2%8B%EC%95%84%ED%95%A8"><span class="toc-number">5.</span> <span class="toc-text">D. 이 사람 왜 이렇게 1122를 좋아함?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#E-%EC%83%89%EC%A2%85%EC%9D%B4%EC%99%80-%EA%B3%B5%EC%98%88"><span class="toc-number">6.</span> <span class="toc-text">E. 색종이와 공예</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#F-%EC%9A%A9-%EC%A1%B0%EB%A0%A8%EC%82%AC-%EB%A3%B0%EB%A3%A8"><span class="toc-number">7.</span> <span class="toc-text">F. 용 조련사 룰루</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%9D%B4%EC%96%B4%EC%84%9C"><span class="toc-number">8.</span> <span class="toc-text">이어서</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        ZOAC 2022 후기 1
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Junseong Park</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2022-12-26T01:52:46.000Z" itemprop="datePublished">2022-12-26</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/contest/">contest</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/ZOAC/" rel="tag">ZOAC</a>, <a class="tag-link-link" href="/tags/ZOAC-2022/" rel="tag">ZOAC 2022</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="시작하며"><a href="#시작하며" class="headerlink" title="시작하며"></a>시작하며</h2><p>안녕하세요. rasauq1122입니다.<br>2022년 12월 22일, 한양대 ERICA캠퍼스 알고리즘 학회 ‘영과일’ 내부대회 및 경인지역 6개대학 연합 프로그래밍 경시대회 shake! 선발전 <a target="_blank" rel="noopener" href="https://www.acmicpc.net/contest/view/921">Zero One Algorithm Contest 2022</a>(이하 ZOAC 5)가 개최되었습니다.  </p>
+<p>출제는 <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/rasauq1122">저</a>, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/mksmk606">민경 누나</a>, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/rhdqor213">준호</a>와 <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/hyoseok">효석이</a>로 총 4명이 참가하였으며,<br>검수는 <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/bsyun0571">병서 선배</a>, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/hellogaon">성우 형</a>, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/tony0942">tony0942</a>님, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/eaststar">eaststar</a>님, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/amsminn">amsminn</a>님께서 맡아주셨습니다.<br>대회 운영을 위해 힘써주신 출제진, 검수진 분들 모두 수고 많으셨습니다!  </p>
+<p>문제는 A~F번까지는 난이도 순으로 배열하였고, G~M번은 무작위로 나열하였습니다.<br>하지만 문제가 백준에 공개되어 티어가 매겨진 지금, 저를 비롯한 운영진은 매겨진 티어가 운영진이 생각한 티어와 비교하여 더 어렵게 측정된 문제가 생각보다 많아서 당황하고 있습니다…<br>이에 대한 이야기를 비롯하여 문제를 검수 또는 출제하면서 들었던 생각을 작성해보려고 합니다.<br>그럼 알파벳 순서대로 차근차근 얘기해보겠습니다. 1부에서는 A번에서 F번까지만 다루도록 하겠습니다.</p>
+<p>풀이는 <a target="_blank" rel="noopener" href="https://upload.acmicpc.net/5720b2da-39c8-4f64-8f41-fd25476b4ecd/">여기</a>에서 확인해보실 수 있고, 이 포스팅에서는 따로 다루지 않습니다. :)</p>
+<h2 id="A-ZOAC-5"><a href="#A-ZOAC-5" class="headerlink" title="A. ZOAC 5"></a><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/26594">A. ZOAC 5</a></h2><p><strong>본 대회 정답률</strong> : 14명 &#x2F; 14명 (100%)<br><strong>오픈 콘테스트 정답률</strong> : 187명 &#x2F; 197명 (94.9%)  </p>
+<p>제가 출제한 문제입니다. 난이도는 브론즈 3 정도로 나오지 않을까 생각했고 실제로 그렇게 매겨졌습니다.<br>스크립트에서 소주를 마시는 모습을 빌려주신 성우 형에게 무궁한 영광을 돌립니다.<br>출제 의도는 모두가 풀 수 있을 만큼 쉬운 문자열 문제였고, 역시 본 대회에서 모두 다 풀어주셨습니다.<br>사실 ZOAC 2022는 출제진 사이에서 division을 나누어서 진행할지, 나누지 않고 하나의 대회로 진행할지 꽤 오랜 시간 논의되었습니다. 저는 나누어서 진행하자고 강력하게 주장했습니다만… 결국 참가자 유치 등의 문제로 하나의 대회로 진행하게 되었습니다.<br>divison을 나누어서 진행할 때를 대비하여 ZOAC 5의 Hard 버전을 만들어 놨는데, 그 문제에서는 동일한 알파벳을 여러 번 입력할 수 있는 경우도 주어지게 됩니다. 그 문제를 해결하기 위해서는 최대 공약수를 활용해야 할 것입니다.<br>오픈 콘테스트 진행하면서 가장 인상적인 코드는 문자열의 길이 $\div$ 4를 출력하는 코드였습니다.</p>
+<h2 id="B-전투의-신"><a href="#B-전투의-신" class="headerlink" title="B. 전투의 신"></a><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/26595">B. 전투의 신</a></h2><p><strong>본 대회 정답률</strong> : 9명 &#x2F; 14명 (64.3%)<br><strong>오픈 콘테스트 정답률</strong> : 59명 &#x2F; 197명 (29.9%)  </p>
+<p>민경 누나가 출제한 문제입니다. 난이도는 브론즈 1 정도로 생각했지만 실제로는 실버 4로 측정되었습니다.<br>원래는 골드 상위권 정도의 DP 문제로 출제를 하셨지만 전체적인 대회 난이도가 너무 어려워지는 걸 방지하기 위해 더 쉬운 문제로 바꾸어 다시 출제하신 문제입니다.<br>본 대회에서 당연히 A번 다음으로 가장 많이 풀릴 것이라고 출제진 모두가 예상하였지만, $Ax + By$라는 수식이 너무 무시무시했던 건지 C번보다도 적게 풀리는 대참사가 일어나고야 말았습니다…<br>이 참사는 오픈 콘테스트에서도 일어나고야 말았고 결국 실버 4의 티어가 매겨지게 되고 말았습니다.<br>근데 솔직히 제가 본 대회 참가자였어도 수식에 겁먹어서 C번부터 봤을 것 같긴 합니다 ㅎㅎ;</p>
+<h2 id="C-황금-칵테일"><a href="#C-황금-칵테일" class="headerlink" title="C. 황금 칵테일"></a><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/26596">C. 황금 칵테일</a></h2><p><strong>본 대회 정답률</strong> : 13명 &#x2F; 14명 (92.9%)<br><strong>오픈 콘테스트 정답률</strong> : 66명 &#x2F; 197명 (33.5%)</p>
+<p>준호가 출제한 문제입니다. 예상 난이도와 실제 난이도 사이의 큰 차이는 없습니다.<br>이분탐색을 활용하는 시간복잡도 $O(n\log{n})$의 풀이도 존재하지만, 역시 대회 난이도가 너무 어려워지는 걸 방지하기 위해 시간복잡도 $O(n^2)$의 풀이도 AC를 받을 수 있게끔 제한이 조정되었습니다.<br>C++ STL map이나 Python dictionary를 활용하여 쉽게 문제를 해결할 수 있습니다.  </p>
+<h2 id="D-이-사람-왜-이렇게-1122를-좋아함"><a href="#D-이-사람-왜-이렇게-1122를-좋아함" class="headerlink" title="D. 이 사람 왜 이렇게 1122를 좋아함?"></a><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/26597">D. 이 사람 왜 이렇게 1122를 좋아함?</a></h2><p><strong>본 대회 정답률</strong> : 8명 &#x2F; 14명 (57.1%)<br><strong>오픈 콘테스트 정답률</strong> : 39명 &#x2F; 197명 (19.8%)</p>
+<p>제가 출제한 문제입니다. 예상 난이도와 실제 난이도 사이의 큰 차이는 없습니다.<br>사실 제가 이번에 출제한 모든 문제의 시간 제한과 메모리 제한은 각각 1.122초, 1122MB 였습니다. 다만 동료 출제진들의 열렬한 반대로 외부 검수진 분들께 문제를 공개하기 전에 눈물을 머금고 제한을 수정했죠…<br>그래서 이 문제를 만들었습니다! 합법적으로 시간 제한과 메모리 제한을 1122로 도배하기 위해서 냅다 문제의 소재를 그것으로 삼았던 것이었죠! 라고 말은 하지만 사실 이미 제 문제의 대다수가 $N$ 또는 $Q$의 최대 범위로 111222를 채택하고 있습니다.<br>여담으로 준호가 저한테 저런 말을 한 적은 제가 기억한 바로는 없을 겁니다. 아마도.</p>
+<h2 id="E-색종이와-공예"><a href="#E-색종이와-공예" class="headerlink" title="E. 색종이와 공예"></a><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/26598">E. 색종이와 공예</a></h2><p><strong>본 대회 정답률</strong> : 6명 &#x2F; 14명 (42.9%)<br><strong>오픈 콘테스트 정답률</strong> : 31명 &#x2F; 197명 (15.7%)</p>
+<p>제가 출제한 문제입니다. 예상 난이도와 실제 난이도 사이의 큰 차이는 없습니다.<br>이번 대회를 위해 가장 먼저 아이디어를 냈던 세 개의 문제 중 하나입니다.<br>이 문제를 출제진끼리 공유하기 전까지 저는 이 문제를 쿼리형 문제로 내고 싶었습니다. 이를 테면 색종이의 일부분을 다시 직사각형 모양으로 잘라 그 부분이 예쁜 색종이 공예품인지 판단하는 문제와 같은 식으로요.<br>하지만 저는 끝까지 그런 식으로 문제를 푸는 방법을 떠올리지 못했고 그냥 적당히 타협해서 문제를 이대로 냈었습니다. 근데 이제 준호가 이 문제를 푸는데 쿼리당 $O(1)$로 풀 수 있는 방법으로 문제를 풀었던 겁니다! 그래서 ‘옳다구나!’하고 <em>준호식 풀이</em>로 날먹해서 새로 <strong>색종이와 공예와 쿼리</strong>라는 문제를 하나 더 낼 계획이었죠.<br>근데 이제 가장 먼저 검수를 시작한 성우형부터 다른 외부 검수진 분들도 다 이 문제를 <em>준호식 풀이</em>로 풀더라구요. 그래서 이 문제가 맞추면 다른 문제 하나를 공짜로 맞출 수 있는 보너스 문제가 될 것을 우려하여 결국 둘 중 한 문제를 제거하기로 했습니다. 그 결과 <strong>색종이와 공예와 쿼리</strong>는 <strong>이 사람 왜 이렇게 1122를 좋아함?</strong> 문제로 대체되었다는 비하인드가 있습니다.</p>
+<h2 id="F-용-조련사-룰루"><a href="#F-용-조련사-룰루" class="headerlink" title="F. 용 조련사 룰루"></a><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/26599">F. 용 조련사 룰루</a></h2><p><strong>본 대회 정답률</strong> : 1명 &#x2F; 14명 (7.1%)<br><strong>오픈 콘테스트 정답률</strong> : 11명 &#x2F; 197명 (5.6%)</p>
+<p>제가 출제한 문제입니다. 높아야 골드 5라고 예상했지만 실제로는 골드 1까지의 높은 난이도를 받았습니다.<br>이번 대회에서 가장 마음에 쏙 드는 최애 문제라고 할 수 있겠습니다.<br>강 건너기 문제에서 영감을 얻었습니다.<br>대회 난이도가 너무 높아질 것을 우려하여 민경 누나가 출제해야 할 문제가 마지막 한 문제만 남았을 때 저에게 쉬운 문제로 출제해달라 요구했습니다. (실버 정도의 난이도를 요구했습니다.) 쉬운 문제를 내기 위해 이것저것 생각하다가 이 문제를 떠올렸습니다. 이 문제가 너무 마음에 든 저는 ‘살짝 어렵긴 하지만 특별한 알고리즘이 필요한 게 아니고 조금 시간을 갖고 생각하면 충분히 맞출 수 있는 문제다.’라고 주장하며 대회에 내게 해달라고 하였습니다.<br>마침 우리 출제진 모두 그리디와 애드 혹에 꽤나 강했기 때문에(…) 이 문제는 높아야 골드 5 정도될 것이라고 생각하여 E번 다음으로 쉬운 문제라고 생각했고 F번에 배치되는 대참사가 일어나고 맙니다.<br>하지만 저 개인적으로는 <a target="_blank" rel="noopener" href="https://www.acmicpc.net/contest/view/482">ZOAC 2019</a>에 출제되었던 <a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/18239">편안한 수열 만들기</a>와 같은 애드 혹 문제를 꼭 내고 싶다는 소망을 이룰 수 있어서 참 좋았습니다.<br>또한 본 대회에서는 우승자가 이 문제를 맞춰 6솔로 우승을 할 수 있었다는 점과, 오픈 콘테스트에서 1등하신 <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/xiaowuc1">xiaowuc1</a>님께서 이 문제를 해결하지 못하셔서 All-Solve가 나오지 않았다는 점에서도 굉장히 마음에 쏙 드는 효자 문제라고 할 수 있겠습니다.</p>
+<h2 id="이어서"><a href="#이어서" class="headerlink" title="이어서"></a>이어서</h2><p><a href="https://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-2/"><em>ZOAC 2022 후기 2</em></a>로 이어집니다.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/tags/">Tag</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="http://github.com/rasauq1122">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0"><span class="toc-number">1.</span> <span class="toc-text">시작하며</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#A-ZOAC-5"><span class="toc-number">2.</span> <span class="toc-text">A. ZOAC 5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#B-%EC%A0%84%ED%88%AC%EC%9D%98-%EC%8B%A0"><span class="toc-number">3.</span> <span class="toc-text">B. 전투의 신</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C-%ED%99%A9%EA%B8%88-%EC%B9%B5%ED%85%8C%EC%9D%BC"><span class="toc-number">4.</span> <span class="toc-text">C. 황금 칵테일</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#D-%EC%9D%B4-%EC%82%AC%EB%9E%8C-%EC%99%9C-%EC%9D%B4%EB%A0%87%EA%B2%8C-1122%EB%A5%BC-%EC%A2%8B%EC%95%84%ED%95%A8"><span class="toc-number">5.</span> <span class="toc-text">D. 이 사람 왜 이렇게 1122를 좋아함?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#E-%EC%83%89%EC%A2%85%EC%9D%B4%EC%99%80-%EA%B3%B5%EC%98%88"><span class="toc-number">6.</span> <span class="toc-text">E. 색종이와 공예</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#F-%EC%9A%A9-%EC%A1%B0%EB%A0%A8%EC%82%AC-%EB%A3%B0%EB%A3%A8"><span class="toc-number">7.</span> <span class="toc-text">F. 용 조련사 룰루</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%9D%B4%EC%96%B4%EC%84%9C"><span class="toc-number">8.</span> <span class="toc-text">이어서</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&text=ZOAC 2022 후기 1"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&title=ZOAC 2022 후기 1"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&is_video=false&description=ZOAC 2022 후기 1"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=ZOAC 2022 후기 1&body=Check out this article: http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&title=ZOAC 2022 후기 1"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&title=ZOAC 2022 후기 1"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&title=ZOAC 2022 후기 1"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&title=ZOAC 2022 후기 1"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&name=ZOAC 2022 후기 1&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://rasauq1122.github.io/2022/12/26/ZOAC-2022-%ED%9B%84%EA%B8%B0-1/&t=ZOAC 2022 후기 1"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2022-2023
+    Junseong Park
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/rasauq1122">Projects</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">
+
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-81S0RLP4P2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-81S0RLP4P2');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
