@@ -1,6 +1,8 @@
 export interface ColorScheme {
   light: string
   lightgray: string
+  documentBackground: string
+  documentShadow: string
   gray: string
   darkgray: string
   dark: string
