@@ -131,6 +131,15 @@ a {
   max-width: calc(#{map.get($breakpoints, desktop)} + 300px);
   margin: 0 auto;
   & article {
+
+    background-color: var(--documentBackground);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--documentShadow);  /* 부드러운 그림자 */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.001rem;
+    padding-bottom: 0.001rem;
+    
     & > h1 {
       font-size: 2rem;
     }
