@@ -53,6 +53,8 @@ ${stylesheet.join("\n\n")}
   --tertiary: ${theme.colors.lightMode.tertiary};
   --highlight: ${theme.colors.lightMode.highlight};
   --textHighlight: ${theme.colors.lightMode.textHighlight};
+  --documentBackground: ${theme.colors.lightMode.documentBackground};
+  --documentShadow: ${theme.colors.lightMode.documentShadow};
 
   --headerFont: "${theme.typography.header}", ${DEFAULT_SANS_SERIF};
   --bodyFont: "${theme.typography.body}", ${DEFAULT_SANS_SERIF};
@@ -69,6 +71,8 @@ ${stylesheet.join("\n\n")}
   --tertiary: ${theme.colors.darkMode.tertiary};
   --highlight: ${theme.colors.darkMode.highlight};
   --textHighlight: ${theme.colors.darkMode.textHighlight};
+  --documentBackground: ${theme.colors.lightMode.documentBackground};
+  --documentShadow: ${theme.colors.lightMode.documentShadow};
 }
 `
 }
