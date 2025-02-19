@@ -59,6 +59,11 @@ ul,
   /* tr and td removed from list of selectors for overflow-wrap, allowing them to use default 'normal' property value */
 }
 
+ol,
+ul {
+  padding-left: 1rem;
+}
+
 .math {
   &.math-display {
     text-align: center;
@@ -142,8 +147,8 @@ a {
     }
 
     & li > * {
-      margin-top: 0;
-      margin-bottom: 0;
+      margin-top: 0.125rem;
+      margin-bottom: 0.125rem;
     }
 
     p > strong {
