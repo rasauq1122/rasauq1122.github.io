@@ -71,8 +71,8 @@ ${stylesheet.join("\n\n")}
   --tertiary: ${theme.colors.darkMode.tertiary};
   --highlight: ${theme.colors.darkMode.highlight};
   --textHighlight: ${theme.colors.darkMode.textHighlight};
-  --documentBackground: ${theme.colors.lightMode.documentBackground};
-  --documentShadow: ${theme.colors.lightMode.documentShadow};
+  --documentBackground: ${theme.colors.darkMode.documentBackground};
+  --documentShadow: ${theme.colors.darkMode.documentShadow};
 }
 `
 }
